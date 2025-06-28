@@ -1,0 +1,41 @@
+plugins {
+    id 'java'
+}
+
+group = 'net.professoradamgeldplugin'
+version = '1.0'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+    // Remove this line to disable sources.jar generation
+    // withSourcesJar()
+}
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://repo.papermc.io/repository/maven-public/' }
+    maven { url = 'https://jitpack.io' } // Neu
+    maven {
+    name = "spigot-repo"
+    url = "https://hub.spigotmc.org/nexus/content/repositories/snapshots/"
+}
+
+}
+
+dependencies {
+    compileOnly 'io.papermc.paper:paper-api:1.20.1-R0.1-SNAPSHOT' // Use a valid Paper API version
+    compileOnly('com.github.MilkBowl:VaultAPI:1.7') {
+        exclude group: 'org.bukkit', module: 'bukkit'
+    }
+    implementation 'org.yaml:snakeyaml:2.0'
+}
+
+jar {
+    archiveFileName = 'ProfessorAdamGeldPlugin.jar'
+}
+
+tasks.withType(JavaCompile) {
+    options.compilerArgs << "--enable-preview"
+}

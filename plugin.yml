@@ -1,0 +1,28 @@
+name: ProfessorAdamGeldPlugin
+version: 1.0
+main: net.professoradamgeldplugin.Main
+api-version: 1.20
+softdepend: [Vault]
+commands:
+  money:
+    description: Zeigt deinen Kontostand
+  pay:
+    description: Überweise Coins an andere Spieler
+  buy:
+    description: Kaufe Items
+  sell:
+    description: Verkaufe Items
+  chestshop:
+    description: Erstelle einen ChestShop
+  gs:
+    description: Erstellt ein neues Grundstück
+  gsdelete:
+    description: Entfernt dein Grundstück unter dir
+  gsinfo:
+    description: Zeigt Infos über das Grundstück, auf dem du stehst
+  gsshow:
+    description: Markiert Grundstücksgrenze mit Steinziegeln
+  exchange:
+    description: Tausche Coins gegen Gold oder umgekehrtac
+  openchant:
+    description: Kaufe OP-Verzauberungsbücher
