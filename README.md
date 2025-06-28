@@ -20,4 +20,5 @@ Features & Commands:
 _Enjoy a richer Minecraft experience with easy-to-use commands and a robust economy system!_
 ----------------------------------------------
 Latest Download: https://github.com/AdamBasly/ProfessorAdamGeldPlugin/releases
+
 CurseForge: https://www.curseforge.com/minecraft/bukkit-plugins/professoradammoneyplugin
